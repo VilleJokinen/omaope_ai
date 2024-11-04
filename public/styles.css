@@ -3,24 +3,35 @@ body{
     padding: 10px;
 }
 
+button{
+    background-color: rgb(20, 134, 172);
+    color: rgb(255, 0, 212);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 .chatbox{
     width: 90%;
-    height: auto;
-    background-color: lightgray;
+    background-color: rgba(190, 209, 22, 0.973);
     border-radius: 10px;
     margin: 10px auto;
     padding: 10px;
+    height: auto;
+    overflow-y: auto;
 }
 
 .userinput{
-    
+    position: bottom;
     height: 40px;
     border: none;
     padding: 5px;
     margin-bottom: 10px;
     font-size: 16px;
     border-radius: 10px;
-    
+    width: 80%;
 }
 
 .send-button{
@@ -30,4 +41,35 @@ body{
     color: rgb(255, 0, 212);
     border-radius: 5px;
     cursor: pointer;	
+}
+
+.message{
+    background-color: rgb(20, 134, 172);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    float: right;
+    width: 80%;
+}
+
+.user-message{
+    background-color: rgb(20, 134, 172);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    float: left;
+    font-weight: bold;
+}
+
+.bot-message{
+    background-color: rgb(20, 134, 172);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    float: right;
+    font-weight: normal;
+    font-style: italic;
 }
