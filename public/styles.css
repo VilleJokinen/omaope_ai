@@ -10,7 +10,6 @@ button{
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 .chatbox{
@@ -72,4 +71,20 @@ button{
     float: right;
     font-weight: normal;
     font-style: italic;
+}
+
+.input-container{
+    display: flex;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image-files{
+    flex: 1;
+    padding: 10px;
+    border: none;
 }

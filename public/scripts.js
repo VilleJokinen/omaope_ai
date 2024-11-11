@@ -48,3 +48,25 @@ function addMessageToChatbox(message, className) {
     document.getElementById('chatbox').appendChild(messageElement);
 }
 
+function sendImages(){
+    const imageInput = document.getElementById('image-files');
+    const files = imageInput.files;
+
+    if(files.length === 0){
+        alert('No files selected');
+        return;
+    }
+
+    console.log(files);
+
+    const formData = new FormData();
+
+    for(const file of files){
+        formData.append('images', file);
+    }
+
+    console.log(formData)
+
+    console.log(formData.getAll('images'));
+}
+
